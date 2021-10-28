@@ -1,0 +1,47 @@
+body
+{
+    margin: 0;  
+    padding: 0;
+
+    
+   
+
+font-size: 50px;
+}
+.caio
+{
+    font-size: 25px;
+
+}
+.anbiente{
+    color: #fff;
+    text-align: center;
+    top: 5ch;
+    left: 20ch;
+    object-position: center;
+    position: relative;
+    height: 15ch;
+    width: 15ch;
+    border-radius: 50%;
+   
+    background-size: cover;
+    border: solid 1px;
+}
+.t
+{
+    position: relative;
+top: 6ch;
+}
+@media(max-width:1000px)
+{
+    .anbiente
+    {
+        top: 5ch;
+        left: 0.5ch;
+
+
+    }
+
+
+
+}
