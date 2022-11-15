@@ -1,8 +1,7 @@
-let data = new Date();
-    let hora = data.getHours();
-    let minutos=data.getMinutes();
-    let sigundos = data.getSeconds();
-    let total=hora+":"+minutos+":"+sigundos;
+
+    
+   
+    
 
    function ca (){
     let data = new Date();
@@ -21,14 +20,7 @@ let data = new Date();
          sigundos="0"+ sigundos;
      }
 
-
-
-    let total=hora+":"+minutos+":"+sigundos;
-    t.innerHTML=`${total}`
-    }
-    let tempo = setInterval(ca,1000);
-
-    if(hora <=0  ||  hora <= 6 ){
+    if(horas <=0  ||  horas <= 6 ){
         caio.innerHTML=`<style>
                              body
                              {
@@ -40,7 +32,7 @@ let data = new Date();
                             }
                              </style>BOA MADRUGA `
 
-    } else if( hora <=7 || hora <=12){
+    } else if( horas <=7 || horas <=12){
         caio.innerHTML=`<style>
                              body
                              {
@@ -52,7 +44,7 @@ let data = new Date();
                             }
                              </style>BOA DIA `
 
-    }else if(hora <=13 || hora <=18 ){
+    }else if(horas <=13 || horas <=18 ){
         caio.innerHTML=`<style>
                              body
                              {
@@ -63,7 +55,7 @@ let data = new Date();
                                 background-size: cover;
                             }
                              </style>BOA TARDE`
-    }else if(hora <=19 || hora <= 23){
+    }else if(horas <=19 || horas <= 23){
         caio.innerHTML=`<style> body
                              {
                                 background: #29252C;
@@ -74,3 +66,7 @@ let data = new Date();
                              </style> BOA NOITE`
 
     }
+    let total=horas+":"+minutos+":"+sigundos;
+    t.innerHTML=`${total}`
+    }
+    let tempo = setInterval(ca,1000);
